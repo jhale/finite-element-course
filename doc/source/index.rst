@@ -92,7 +92,6 @@
             - Up to the end of :numref:`secdirichlet`.
         *   - 16
             - Up to the end of :numref:`convergence`.
-            - Time for the mastery exercise, (catch up time for year 3).
 
    .. image:: _static/brenner_scott.png
       :align: right
