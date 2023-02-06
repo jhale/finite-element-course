@@ -5,7 +5,7 @@ build-backend = "hatchling.build"
 [project]
 name = "finite-element-course"
 version = "2023.0"
-description="""Skeleton finite element implementation in support of MATH60022/MATH70022 at Imperial College London."""
+description="""Skeleton finite element implementation."""
 license = "MIT"
 authors = [
     { name = "David A. Ham", email = "David.Ham@imperial.ac.uk" },

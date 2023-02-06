@@ -1,20 +1,21 @@
 Software tools
 ==============
 
-In order to do this module, you'll need some core software tools. As the module
-proceeds we'll also install several more Python packages, but you don't need to
-install those right now. The core tools you will need are:
+To ensure a consistent coding environment we will be using GitHub Codespaces.
+GitHub Codespaces provide a cloud-based development environment for working on
+code. Free GitHub accounts come with 120 hours of Codespace time per month which
+should be plenty.
 
-    1. Python version 3.7 or later. Python 3.11 is recommended as the feedback
-       that the interpreter provides if your code crashes has improved
-       considerably.
-    2. Git (the revision control system we're going to use).
-    3. A Python-aware text editor. Visual Studio Code is recommended, and all
-       the instructions in this course will assume that this is what you are using.
+First visit `jhale/finite-element-course
+<https://github.com/jhale/finite-element-course>` and click *Use this template*
+and then *Create a new repository*. Make your repository name
+``finite-element-course-2023`` and make sure to click the Private box.
 
-Links to installation instructions for all of these packages on a variety of
-operating systems are available on the website of the textbook :doc:`Object-oriented
-Programming in Python for Mathematicians <pop:installation>`.
+Next visit `GitHub codespaces <https://github.com/codespaces>` and click on
+*New codespace*. Select the repository you created above and leave everything
+else on the default settings.
+
+The instructor will walk you through using the Codespace in class.
 
 Python 
 ......
@@ -58,32 +59,6 @@ time and to submit your work for feedback and, eventually, marking.
 We will be using the revision control system `git <http://git-scm.com/>`_,
 which is the current state of the art and is widely adopted. We'll be combining
 git with the online hosting service `GitHub <http://github.org>`_.
-
-.. proof:exercise::
-
-    Install Git and work through the :doc:`git appendix of Object-oriented
-    Programming in Python for Mathematicians <pop:a2_git>`.
-
-    Next, go and do the `git tutorial <https://swcarpentry.github.io/git-novice/>`_
-    over at Software Carpentry.
-
-.. hint::
-
-   If you are a more confident computer user, you could go ahead and
-   set up git to work with ssh, the secure shell. This will save a lot
-   of password typing but it's not essential so if you are not so
-   confident with computers, you can skip this bit. GitHub provide
-   `instructions for using ssh with git
-   <https://help.github.com/articles/generating-an-ssh-key/>`__.
-
-
-Visual Studio Code
-..................
-
-Visual Studio Code is a Python-aware Integrated Development Environment (IDE).
-This means that it incorporates editing files with other programming features
-such as :ref:`debugging`, Git support, and built-in :ref:`terminal
-<terminal-vscode>`.
 
 The command line
 ................
