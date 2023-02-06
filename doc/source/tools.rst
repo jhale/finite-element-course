@@ -3,8 +3,9 @@ Software tools
 
 To ensure a consistent coding environment we will be using GitHub Codespaces.
 GitHub Codespaces provide a cloud-based development environment for working on
-code. Free GitHub accounts come with 120 hours of Codespace time per month which
-should be plenty.
+code. Free GitHub accounts come with 120 hours of Codespace time per month
+which should be plenty. You are welcome to use your own Python and git install,
+but you will be responsible for troubleshooting.
 
 First visit `jhale/finite-element-course
 <https://github.com/jhale/finite-element-course>` and click *Use this template*
