@@ -8,11 +8,11 @@ which should be plenty. You are welcome to use your own Python and git install,
 but you will be responsible for troubleshooting.
 
 First visit `jhale/finite-element-course
-<https://github.com/jhale/finite-element-course>` and click *Use this template*
+<https://github.com/jhale/finite-element-course>`__ and click *Use this template*
 and then *Create a new repository*. Make your repository name
 ``finite-element-course-2023`` and make sure to click the Private box.
 
-Next visit `GitHub codespaces <https://github.com/codespaces>` and click on
+Next visit `GitHub codespaces <https://github.com/codespaces>`__ and click on
 *New codespace*. Select the repository you created above and leave everything
 else on the default settings.
 
