@@ -282,8 +282,8 @@ We then use the following integration by parts result.
 
 .. proof:theorem:: Integration by parts
 
-   Let `u\in C^1(\Omega)` and `n` an outward normal to the boundary `\partial
-   \Omega`. Then
+   For a suitably smooth function `u` and with `n` an outward normal to the
+   boundary `\partial \Omega` then for a suitable smooth function `v`
 
    .. math::
 
