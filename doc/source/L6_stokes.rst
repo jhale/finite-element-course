@@ -94,7 +94,7 @@ vanish on the boundary, and `Q=\mathring{L}^2(\Omega)`, with
    .. math::
       :label:
 
-      a(u,v) = \mu\int_\Omega \epsilon(u):\epsilon(v)d\, x,
+      a(u,v) = 2\mu\int_\Omega \epsilon(u):\epsilon(v)d\, x,
 
       b(v,q) = -\int_\Omega q \nabla\cdot v d\, x.
 
@@ -740,9 +740,9 @@ the following result.
       .. math::
 	 :label:
 
-	 b(u-\Pi_hu,q) = 0, \quad \forall v\in V,\,q\in Q_h,
+	 b(v-\Pi_hv,q) = 0, \quad \forall v\in V,\,q\in Q_h,
 
-	 \|\Pi_hu\|_V \leq C_{\Pi}\|u\|_V,
+	 \|\Pi_hv\|_V \leq C_{\Pi}\|v\|_V,
 
    then the discrete inf-sup condition holds.
 
