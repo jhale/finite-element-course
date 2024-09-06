@@ -10,18 +10,18 @@
       \mainmatter
       \part{Numerical analysis}
 
-.. only:: latex
+.. .. only:: latex
 
-    .. toctree::
-        :numbered:
-        :maxdepth: 2
+..     .. toctree::
+..         :numbered:
+..         :maxdepth: 2
 
-        L1_introduction
-        L2_fespaces
-        L3_interpolation
-        L4_feprobs
-        L5_convergence
-	L6_stokes
+..         L1_introduction
+..         L2_fespaces
+..         L3_interpolation
+..         L4_feprobs
+..         L5_convergence
+.. 	L6_stokes
 
 .. only:: html
 
@@ -119,27 +119,30 @@
    Lecture notes:
    ~~~~~~~~~~~~~~
 
-    .. toctree::
-        :numbered:
-        :maxdepth: 2
+.. toctree::
+    :numbered:
+    :maxdepth: 2
 
-        L1_introduction
-        L2_fespaces
-        L3_interpolation
-        L4_feprobs
-        L5_convergence
-	L6_stokes
+    L1_introduction
+    L2_fespaces
+    L3_interpolation
+    L4_feprobs
+    L5_convergence
+    L6_stokes
+
+.. only:: html
 
    Past exam papers
    ~~~~~~~~~~~~~~~~
    Past examination papers from the Imperial College London course are available here:
 
-   * `2017 exam paper <_static/FEExam-2017.pdf>`__ and `solutions <_static/FEExam-2017-soln.pdf>`__
    * `2018 exam paper <_static/FEExam-2018.pdf>`__ and `solutions <_static/FEExam-2018-soln.pdf>`__
    * `2019 exam paper <_static/FEExam-2019.pdf>`__ and `solutions <_static/FEExam-2019-solns.pdf>`__
    * `2020 exam paper <_static/FEExam-2020.pdf>`__ and `solutions <_static/FEExam-2020-solns.pdf>`__
    * `2021 exam paper <_static/FEExam-2021.pdf>`__ and `solutions <_static/FEExam-2021-solns.pdf>`__
    * `2022 exam paper <_static/FEExam-2022.pdf>`__ and `solutions <_static/FEExam-2022-soln.pdf>`__
+   * `2022 exam paper <_static/FEExam-2022.pdf>`__ and `solutions <_static/FEExam-2022-solns.pdf>`__
+   * `2023 exam paper <_static/FEExam-2023.pdf>`__ and `solutions <_static/FEExam-2023-solns.pdf>`__
    
    The examination at the University of Luxembourg will be adapted to the
    specific needs of the students attending the course.
@@ -203,24 +206,3 @@
    zbibliography
 
 .. only:: html
-
-   Part 3: Modern practice
-   -----------------------
-
-   The modern practice part of the module will close the gap between the
-   theoretical and implementation aspects of the finite element method outlined
-   in parts 1 and 2, and the finite element method as an active topic of
-   research and a key tool of modern scientific and engineering investigation.
-
-   The starting point will be a gentle introduction to the open source DOLFINx
-   or Firedrake software systems for the automatic solution of PDEs using the
-   finite element method.
-
-   This section of the course will be shown as Python Jupyter Notebooks run on
-   the Google Colab cloud computing environment. A Google account is required.
-
-.. toctree::
-   :numbered
-   :maxdepth: 2
-
-   P1_poisson

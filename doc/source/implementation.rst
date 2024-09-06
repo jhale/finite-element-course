@@ -20,12 +20,9 @@ feedback in weeks 4 and 7.
 Formalities and marking scheme
 ------------------------------
 
-The implementation exercise is due immediately prior to the Summer Semester
-study days/revision period. That is, by 1600 on Friday 2 June 2023. You must
-submit your work by emailing jack.hale@uni.lu the link to your GitHub
-repository and the git hash you are submitting. You can conveniently :ref:`find
-this hash on the commits page for your repository on GitHub <fons:git-hash>`.
-The commit you submit must date from before the deadline!
+The implementation exercise is due at 1300 on Friday 22 March 2024. Submission
+is via GitHub: the last commit pushed to GitHub and dated before the deadline
+will be marked.
 
 The marking scheme will be as follows:
 
@@ -145,7 +142,7 @@ Setting up your repository
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 We're using a tool called `GitHub classroom <https://classroom.github.com>`_ to automate the creation of your
-copies of the repository. To create your repository, `click here <https://classroom.github.com/a/y6zvqAa5>`_.
+copies of the repository. To create your repository, `click here <https://classroom.github.com/a/ZEeJSgi5>`_.
 
 Cloning a local copy
 ~~~~~~~~~~~~~~~~~~~~
@@ -166,7 +163,7 @@ Your git repository contains a Python package. Installing this will cause the
 other Python packages on which it depends to be installed into your venv, and
 will create various visualisation scripts you'll need later in the module. Run:
 
-.. console::
+.. code-block:: console
 
     $ python -m pip install -e finite-element-course/
 
