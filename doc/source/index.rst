@@ -47,51 +47,7 @@
    ---------------
 
    The numerical analysis and implementation parts of the module run in
-   parallel. The modern practice part of the module will take place after the
-   numerical analysis and implementation parts. Each part has videos and
-   exercises embedded in its notes. This table indicates the progress that you
-   should make through each component each week.
-
-   .. list-table::
-        :widths: 10 45 45
-        :header-rows: 1
-
-        *   - Week
-            - Numerical analysis
-            - Implementation
-        *   - 1
-            - Up to and including :numref:`Exercise
-              {number}<def-robin>`.
-            - Do the background tutorials and installation work given under
-              :doc:`tools` and :doc:`implementation`.
-        *   - 3
-            - Up to and including :numref:`Exercise
-              {number}<exe-1d-lagrange-basis>`.
-            - Up to the end of :numref:`quadrature`.
-        *   - 5
-            - Up to and including :numref:`Definition {number}<P1unisolve>`.
-            - Up to and including :numref:`Exercise {number}<ex-vandermonde>`.
-        *   - 7
-            - Up to and including :numref:`Exercise {number}<exer-argyris>`.
-            - Up to and including :numref:`Exercise {number}<ex-tabulate>`.
-        *   - 9
-            - Up to and including :numref:`Definition
-              {number}<def-averaged-taylor>`.
-            - Up to the end of :numref:`secfinitelement`.
-        *   - 11
-            - Up to and including :numref:`Lemma {number}<IerrK1>`.
-            - Up to and including :numref:`Exercise {number}<ex-local>`.
-        *   - 13
-            - Up to and including :numref:`Exercise {number}<exe-pure-neumann>`.
-            - Up to the end of :numref:`secfunctionspaces`.
-        *   - 15
-            - Up to the end of :numref:`fe_problems`.
-            - Up to the end of :numref:`secfunctions`.
-        *   - 16
-            - Up to and including :numref:`Theorem {number}<thm-cea>`.
-            - Up to the end of :numref:`secdirichlet`.
-        *   - 16
-            - Up to the end of :numref:`convergence`.
+   parallel. Each part has videos and exercises embedded in its notes.
 
    .. image:: _static/brenner_scott.png
       :align: right
