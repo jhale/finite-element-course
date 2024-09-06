@@ -21,7 +21,7 @@
 ..         L3_interpolation
 ..         L4_feprobs
 ..         L5_convergence
-.. 	L6_stokes
+.. 	   L6_stokes
 
 .. only:: html
 
@@ -31,7 +31,7 @@
 
    This webpage is adapted with permission from the `original
    <https://finite-element.github.io>`__ authored by Prof. Colin
-   Cotter and Dr. David Ham at Imperial College London. The section on Modern
+   Cotter and Prof. David Ham at Imperial College London. The section on Modern
    Finite Element practice was authored by Dr. Jack S. Hale at the University
    of Luxembourg.
 
@@ -160,5 +160,4 @@
    8_nonlinear_problems
    9_mixed_problems
    zbibliography
-
-.. only:: html
+   fe_utils
