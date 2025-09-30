@@ -95,10 +95,10 @@
    * `2018 exam paper <_static/FEExam-2018.pdf>`__ and `solutions <_static/FEExam-2018-soln.pdf>`__
    * `2019 exam paper <_static/FEExam-2019.pdf>`__ and `solutions <_static/FEExam-2019-solns.pdf>`__
    * `2020 exam paper <_static/FEExam-2020.pdf>`__ and `solutions <_static/FEExam-2020-solns.pdf>`__
-   * `2021 exam paper <_static/FEExam-2021.pdf>`__ and `solutions <_static/FEExam-2021-solns.pdf>`__
+   * `2021 exam paper <_static/FEExam-2021.pdf>`__ and `solutions <_static/FEExam-2021-solns.pdf>`__ (Note that this was an open book examination for remote exam during the COVID19 era.)
    * `2022 exam paper <_static/FEExam-2022.pdf>`__ and `solutions <_static/FEExam-2022-soln.pdf>`__
-   * `2022 exam paper <_static/FEExam-2022.pdf>`__ and `solutions <_static/FEExam-2022-solns.pdf>`__
    * `2023 exam paper <_static/FEExam-2023.pdf>`__ and `solutions <_static/FEExam-2023-solns.pdf>`__
+   * `2024 exam paper <_static/FEExam-2024.pdf>`__ and `solutions <_static/FEExam-2024-solns.pdf>`__
    
    The examination at the University of Luxembourg will be adapted to the
    specific needs of the students attending the course.
