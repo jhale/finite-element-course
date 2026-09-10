@@ -343,12 +343,13 @@ Now we develop an estimate of the error `T^kf - f`.
       \int_B\int_0^1 |D^\alpha f(ty+(1-t)x)|^2 \, d t\, d y 
       \int_B\int_0^1 t^{2k}\, d t\, d y\,\, d x.
 
-   Then
+   The final factor is `\int_B\int_0^1 t^{2k}\, d t\, d y = |B|/(2k+1)`,
+   which cancels one power of `|B|`, so that
 
    .. math::
    
       \int_\Omega |f(x)-Q_{k,B}f(x)|^2\, d x 
-      \leq C_1\frac{d^{2(k+1)}}{|B|^2}
+      \leq C_1\frac{d^{2(k+1)}}{|B|}
       \sum_{|\alpha|=k+1}\int_\Omega
       \int_B\int_0^1 |D^\alpha f(ty+(1-t)x)|^2 \, d t\, d y \, d x.
 
@@ -381,15 +382,15 @@ Now we develop an estimate of the error `T^kf - f`.
    .. math::
       
       II &=  \int_\Omega \int_{1/2}^1 \int_{\mathbb{R}^n} |g_\alpha(ty+(1-t)x)|^2
-      \, d x \, d t\, d y,
+      \, d y \, d t\, d x,
       
-      &=  \int_\Omega \int_{1/2}^1 \int_{\mathbb{R}^n} |g_\alpha(ty)|^2\, d x \, d t
-      \, d y, 
+      &=  \int_\Omega \int_{1/2}^1 \int_{\mathbb{R}^n} |g_\alpha(ty)|^2\, d y \, d t
+      \, d x, 
 
       &=  \int_\Omega \int_{1/2}^1 \int_{\mathbb{R}^n} |g_\alpha(z)|^2
       t^{-n}
       \, d z \, d t
-      \, d y,
+      \, d x,
       
       &\leq  2^{n-1}|\Omega|\int_\Omega |D^\alpha f(z)|^2\, d z.
 
@@ -545,13 +546,14 @@ a scaling argument to obtain error estimates in terms of the diameter
 
 .. proof:proof::
    
-   Let `\{\phi_i\}_{i=1}^n` be the nodal basis for `\mathcal{P}`. Then
+   Let `\{\phi_i\}_{i=1}^M` be the nodal basis for `\mathcal{P}`, where
+   `M = \dim\mathcal{P}` is the number of nodal variables. Then
    
    .. math::
       
-      \| \mathcal{I}_{K_1}u\|_{H^k(K_1)} &\leq \sum_{i=1}^k \|\phi_i\|_{H^k(K_1)}|N_i(u)|
+      \| \mathcal{I}_{K_1}u\|_{H^k(K_1)} &\leq \sum_{i=1}^M \|\phi_i\|_{H^k(K_1)}|N_i(u)|
       
-      &\leq \underbrace{\sum_{i=1}^k \|\phi_i\|_{H^k(K_1)}\|N_i\|_{C^{l,\infty}(K_1)'}}_{C_0}\|u\|_{C^{l,\infty}(K_1)},
+      &\leq \underbrace{\sum_{i=1}^M \|\phi_i\|_{H^k(K_1)}\|N_i\|_{C^{l,\infty}(K_1)'}}_{C_0}\|u\|_{C^{l,\infty}(K_1)},
       
       &\leq C \|u\|_{H^k(K_1)},
 
