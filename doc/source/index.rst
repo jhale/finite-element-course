@@ -99,6 +99,7 @@
    * `2022 exam paper <_static/FEExam-2022.pdf>`__ and `solutions <_static/FEExam-2022-soln.pdf>`__
    * `2023 exam paper <_static/FEExam-2023.pdf>`__ and `solutions <_static/FEExam-2023-solns.pdf>`__
    * `2024 exam paper <_static/FEExam-2024.pdf>`__ and `solutions <_static/FEExam-2024-solns.pdf>`__
+   * `2025 exam paper <_static/FEExam-2025.pdf>`__ and `solutions <_static/FEExam-2025-solns.pdf>`__
    
    The examination at the University of Luxembourg will be adapted to the
    specific needs of the students attending the course.
