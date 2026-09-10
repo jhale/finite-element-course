@@ -306,11 +306,12 @@ We can now go and directly apply this lemma to the 1D Lagrange elements.
 
    .. math::
    
-      v(a+(b-a)i/k)=0, \, i=,0,1,\ldots,k,
+      v(a+(b-a)i/k)=0, \, i=0,1,\ldots,k,
 
-   which means that `v` vanishes at `k+1` points in `K`. Since `v` is
-   a degree `k` polynomial, it must be zero by the fundamental theorem
-   of algebra.
+   which means that `v` vanishes at `k+1` distinct points in `K`.
+   Since `v` is a polynomial of degree at most `k`, it must be zero: by
+   the factor theorem, a nonzero polynomial of degree at most `k` has
+   at most `k` roots.
 
 .. proof:exercise::
 
@@ -390,10 +391,8 @@ there, but the following lemma is useful when checking that
    This means we may rewrite
 
    .. math::
-  
-      P(x) = {L(x)}\underbrace{\left(\sum_{i_d=1}^k\sum_{|i_1+\ldots+i_{d-1}|\leq k - i_d}c_{i_1,\ldots,i_{d-1},i_d} x_d^{i_d-1}\prod_{l=1}^{d-1} x_{l}^{i_l}\right)},
 
-      P(x) = \underbrace{x_d}_{L(x)}\underbrace{\left(\sum_{i_d=0}^{k-1}\sum_{|i_1+\ldots+i_{d-1}|\leq k - i_d}c_{i_1,\ldots,i_{d-1},i_d} x_d^{i_d-1}\prod_{l=1}^{d-1} x_{l}^{i_l}\right)}_{Q(x)},
+      P(x) = \underbrace{x_d}_{L(x)}\underbrace{\left(\sum_{i_d=1}^{k}\sum_{|i_1+\ldots+i_{d-1}|\leq k - i_d}c_{i_1,\ldots,i_{d-1},i_d} x_d^{i_d-1}\prod_{l=1}^{d-1} x_{l}^{i_l}\right)}_{Q(x)},
 
    with `\deg(Q)=k-1`.
 
@@ -471,7 +470,7 @@ first do this for `P1`.
 .. proof:proof::
   
    Let `\Pi_1`, `\Pi_2`, `\Pi_3` be the three lines containing the
-   vertices `z_2` and `z_3`, `z_1` and `z_3`, and `z_1` and `z_3`
+   vertices `z_2` and `z_3`, `z_1` and `z_3`, and `z_1` and `z_2`
    respectively, and defined by `L_1=0`, `L_2=0`, and `L_3=0`
    respectively. Consider a linear polynomial `p` vanishing at `z_1`,
    `z_2`, and `z_3`. The restriction `p|_{\Pi_1}` of `p` to `\Pi_1` is
@@ -516,15 +515,27 @@ This technique can then be extended to degree 2.
 
 .. proof:proof::
    
-   Let `p` be a degree `2` polynomial with `N_i(p)` for all of the
+   Let `p` be a degree `2` polynomial with `N_i(p)=0` for all of the
    degree `2` dual basis elements. Let `\Pi_1`, `\Pi_2`, `\Pi_3`,
-   `L_1`, `L_2` and `L_3` be defined as for the proof of Lemma
-   . `p|_{\Pi_1}` is a degree 2 scalar polynomial vanishing
-   at 3 points, and therefore `p=0` on `\Pi_1`, and so
-   `p(x)=L_1(x)Q_1(x)` with `\deg(Q_1)=1`. We also have `0=p|_{\Pi_2}
-   =L_1Q_1|_{\Pi_2}`, so `Q_1|_{\Pi_2}=0` and we conclude that
-   `p(x)=cL_1(x)L_2(x)`. Finally, `p` also vanishes at the midpoint of
-   `L_3`, so we conclude that `c=0` as required.
+   `L_1`, `L_2` and `L_3` be defined as for the proof of
+   :numref:`lemma {number}<P1unisolve>`. The restriction `p|_{\Pi_1}`
+   is a degree 2 scalar polynomial vanishing at the 3 distinct points
+   `z_2`, `z_3` and the midpoint of the edge between them, and
+   therefore `p=0` on `\Pi_1`, and so `p(x)=L_1(x)Q_1(x)` with
+   `\deg(Q_1)=1`.
+
+   Now consider `\Pi_2`, which contains the three nodes `z_1`, `z_3`
+   and the midpoint of the edge between them. Since `K` is
+   non-degenerate, `L_1` vanishes at exactly one point of `\Pi_2`,
+   namely `\Pi_1\cap\Pi_2=z_3`, so at the other two nodes we have
+   `L_1\neq0` and hence `Q_1=0` there. The restriction `Q_1|_{\Pi_2}`
+   is affine and vanishes at two distinct points, so `Q_1|_{\Pi_2}=0`
+   and we conclude that `p(x)=cL_1(x)L_2(x)`.
+
+   Finally, `p` also vanishes at the midpoint `m_3` of the edge
+   contained in `\Pi_3`. This point lies on neither `\Pi_1` nor
+   `\Pi_2`, so `L_1(m_3)L_2(m_3)\neq0`, and we conclude that `c=0` as
+   required.
 
 The technique extends further to degree 3.
    
@@ -545,22 +556,46 @@ triangular structure of the Lagrange triangle.
 .. proof:proof::
    
    We prove by induction. Assume that the degree `k-3` Lagrange
-   element is a finite element. Let `p` be a degree `k` polynomial
-   with `N_i(p)` for all of the degree `k` dual basis elements. Let
-   `\Pi_1`, `\Pi_2`, `\Pi_3`, `L_1`, `L_2` and `L_3` be defined as for
-   the proof of :numref:`lemma {number}<P1unisolve>`. The restriction
-   `p|_{\Pi_1}` is a degree `k` polynomial in one variable that
-   vanishes at `k+1` points, and therefore `p(x)=L_1(x)Q_1(x)`, with
-   `\deg(Q_1)=k-1`. `p` and therefore `Q` also vanishes on `\Pi_2`, so
-   `Q_1(x)=L_2(x)Q_2(x)`.
+   element is a finite element on *any* non-degenerate triangle (we
+   need this on a smaller triangle below, not on `K` itself). Let `p`
+   be a degree `k` polynomial with `N_i(p)=0` for all of the degree
+   `k` dual basis elements. Let `\Pi_1`, `\Pi_2`, `\Pi_3`, `L_1`,
+   `L_2` and `L_3` be defined as for the proof of :numref:`lemma
+   {number}<P1unisolve>`. Each edge line carries exactly `k+1` of the
+   nodes.
 
-   Repeating the argument
-   again means that `p(x)=L_1(x)L_2(x)L_3(x)Q_3(x)`, with `\deg(Q_3)=k-3`.
-   `Q_3` must vanish on the remaining points in the interior of `K`, which
-   are arranged in a smaller triangle `K'` and correspond to the evaluation
-   points for a degree `k-3` Lagrange finite element on `K'`. From
-   the inductive hypothesis, and using the results for `k=1,2,3`, we conclude
-   that `Q_3\equiv=0`, and therefore `p\equiv0` as required.
+   The restriction `p|_{\Pi_1}` is a degree `k` polynomial in one
+   variable that vanishes at `k+1` distinct points, and therefore
+   `p(x)=L_1(x)Q_1(x)`, with `\deg(Q_1)=k-1`. Of the `k+1` nodes on
+   `\Pi_2`, exactly one (the shared vertex `\Pi_1\cap\Pi_2=z_3`) is a
+   zero of `L_1`, so `Q_1` vanishes at the remaining `k` nodes of
+   `\Pi_2`. Since `Q_1|_{\Pi_2}` has degree at most `k-1` and `k`
+   distinct roots, `Q_1|_{\Pi_2}=0` and `Q_1(x)=L_2(x)Q_2(x)`, with
+   `\deg(Q_2)=k-2`.
+
+   Repeating the argument on `\Pi_3`, where `L_1L_2` vanishes at
+   exactly the two vertices `z_2` and `z_1`, leaves `k-1` nodes at
+   which `Q_2` vanishes; as `\deg(Q_2|_{\Pi_3})\leq k-2`, we get
+   `Q_2(x)=L_3(x)Q_3(x)` and hence
+   `p(x)=L_1(x)L_2(x)L_3(x)Q_3(x)`, with `\deg(Q_3)=k-3`.
+
+   `Q_3` must vanish on the remaining points in the interior of `K`,
+   at which `L_1L_2L_3\neq0`. In barycentric coordinates these are the
+   points whose three coordinates are multiples of `1/k` and are each
+   at least `1/k`, i.e. they are precisely the nodes of the degree
+   `k-3` Lagrange element on the smaller triangle `K'` with vertices
+
+   .. math::
+
+      z_m' = \frac{1}{k}\left((k-3)z_m + z_1 + z_2 + z_3\right),
+      \quad m=1,2,3,
+
+   which is the image of `K` under the homothety about the centroid
+   with ratio `(k-3)/k`, and so is non-degenerate. From the inductive
+   hypothesis, and using the results for `k=1,2,3`, we conclude that
+   `Q_3\equiv0` on `K'` and hence, being a polynomial vanishing on a
+   set with non-empty interior, `Q_3\equiv0`. Therefore `p\equiv0` as
+   required.
 
 Some more exotic elements
 -------------------------
@@ -647,7 +682,7 @@ requirements between triangles, which we will do in this chapter.
    A finite element space `V` is a `C^m` finite element space if `u\in
    C^m` for all `u\in V`.
 
-The following lemma guides use in how to inspect the continuity of
+The following lemma guides us in how to inspect the continuity of
 finite element functions.
    
 .. _cty:		      
