@@ -229,7 +229,6 @@ learn when it does and does not work).
 
    .. math::
       \frac{\partial^{FE}u}{\partial x_i}|_{K}= \frac{\partial u}{\partial x_i}|_K, \quad \forall K \in \mathcal{T}.
->>>>>>> upstream/main
 
 Here we see why we needed to introduce `L^2`: we have a definition
 that does not have a unique value on the edge between two adjacent
