@@ -124,6 +124,21 @@ proof_theorem_types = {
 
 proof_latex_parent = "chapter"
 
+# sphinxcontrib-proof skips numbering untitled statements. Patch it so :numref:
+# works on our (mostly untitled) lemmas/theorems too.
+import sphinxcontrib.proof
+from sphinx.util.nodes import clean_astext
+
+
+def _proof_title_getter(node):
+    for elem in node:
+        if isinstance(elem, sphinxcontrib.proof._TitleNode):
+            return clean_astext(elem)
+    return " "
+
+
+sphinxcontrib.proof.title_getter = _proof_title_getter
+
 # -- Options for HTML output ----------------------------------------------
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
