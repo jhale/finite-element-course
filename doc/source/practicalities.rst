@@ -10,11 +10,9 @@ The course is led by `Dr Jack S. Hale
 Teaching Units
 --------------
 
-The course in the winter semester 2024 is officially scheduled within in the
-timeslot on Wednesdays 1300-1500. Following the new rules set out by the Vice
-Rectorate for Academic Affairs and the guidance from the Department of
-Mathematics, the *actual course* will be taught continuously from 1315-1445 for
-a total of 2 TUs of 45 minutes.
+Following the rules set out by the Vice Rectorate for Academic Affairs and the
+guidance from the Department of Mathematics, the course will be taught
+continuously from for 1 hour 30 minutes for a total of 2 TUs of 45 minutes.
 
 Attendance policy
 -----------------
