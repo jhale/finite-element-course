@@ -87,8 +87,8 @@ terminal<fons:terminal>` and switch to the folder:
 
     $ cd docs
 
-Note that `$` is the command prompt (which might be a different character such
-as `%` or `>` for you). You don't type the prompt. Start with `cd`. Next we
+Note that ``$`` is the command prompt (which might be a different character such
+as ``%`` or ``>`` for you). You don't type the prompt. Start with ``cd``. Next we
 create the folder we'll use for this course. Suppose we choose to call it
 :file:`finite-element`, then we would type:
 
@@ -96,7 +96,7 @@ create the folder we'll use for this course. Suppose we choose to call it
 
     $ mkdir finite-element
 
-`mkdir` stands for "make directory". *Directory* is an alternative term to
+``mkdir`` stands for "make directory". *Directory* is an alternative term to
 *folder*. Finally we switch ("change directory") into that folder:
 
 .. code-block:: console
@@ -116,7 +116,7 @@ system. With your current working folder set to the course folder, run:
 
     $ python3 -m venv fe_venv
 
-If your Python interpreter has a different name (e.g. `python3.11` or `py`)
+If your Python interpreter has a different name (e.g. ``python3.11`` or ``py``)
 then you type that instead.
 
 Activating your venv
@@ -186,7 +186,7 @@ At the command line on your working machine type:
     $ git clone <url> finite-element-course
 
 Substituting your git repository url for <url>. Your git repository
-url can be found by clicking on `clone or download` at the top right of your repository page on GitHub. 
+url can be found by clicking on ``clone or download`` at the top right of your repository page on GitHub.
 
 Installing the course Python package
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
