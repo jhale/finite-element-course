@@ -17,7 +17,7 @@ Next visit `GitHub codespaces <https://github.com/codespaces>`__ and click on
 else on the default settings.
 
 The instructor will walk you through using the Codespace in class.
-=======
+
     1. A recent version of Python. Python 3.11 or later is recommended as the
        feedback that the interpreter provides if your code crashes has improved
        considerably.
